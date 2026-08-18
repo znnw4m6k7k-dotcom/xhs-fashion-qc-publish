@@ -1,0 +1,86 @@
+{
+  "schema": "xhs-fashion-qc-publish/v2",
+  "run_id": "",
+  "account": {
+    "id": 0,
+    "display_name": ""
+  },
+  "product": {
+    "name": "",
+    "source_refs": [],
+    "identity_anchor": "",
+    "truth_card": {
+      "verified": [],
+      "unknowns": [],
+      "avoid": []
+    }
+  },
+  "selling_points": {
+    "provided": [],
+    "normalized_for_copy": [],
+    "unsupported_or_unknown": []
+  },
+  "visual_reference": {
+    "type": "optional_html_or_card_library",
+    "path": "",
+    "dimensions": [
+      "composition",
+      "pose",
+      "lighting",
+      "depth_of_field",
+      "expression",
+      "background",
+      "scene"
+    ]
+  },
+  "generation": {
+    "provider": "native-image-generation",
+    "redbeacon_fallback_used": false,
+    "platform_generation_points_used": 0,
+    "count": 6,
+    "aspect_ratio": "3:4",
+    "series_roles": ["street", "street", "street", "street", "street", "mirror_selfie"],
+    "card_selections": []
+  },
+  "qc": {
+    "reviewer": "fashion-ai-image-qc",
+    "items": [
+      {
+        "id": "01",
+        "role": "street",
+        "path": "/absolute/path/to/accepted-image-01.png",
+        "grade": "A",
+        "reason": "构造、颜色、人物、表情动作和商业安全通过"
+      }
+    ],
+    "summary": ""
+  },
+  "copy": {
+    "title": "",
+    "body": "",
+    "tags": [],
+    "source": "product-truth-and-user-selling-points"
+  },
+  "redbeacon": {
+    "account_id": 0,
+    "entry_mode": "self-add-review",
+    "review_record_id": "",
+    "topic_record_id": null,
+    "plan_id": null,
+    "generation_route_used": false,
+    "platform_generation_points_used": 0,
+    "review_status": "not_submitted",
+    "publish": {
+      "requested": false,
+      "published": false,
+      "browser_visible": true,
+      "visibility": "公开可见",
+      "ai_declaration": null,
+      "service_points_used": null,
+      "published_at": "",
+      "archive_record_id": "",
+      "note_url": "",
+      "points_remaining_after": null
+    }
+  }
+}

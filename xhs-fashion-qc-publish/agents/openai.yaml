@@ -1,0 +1,4 @@
+interface:
+  display_name: "女装小红书整套发布"
+  short_description: "原生服装生图、独立审图、文案审稿与受控发布工作流能力"
+  default_prompt: "Use $xhs-fashion-qc-publish to generate, independently audit, and prepare a women’s apparel Xiaohongshu post for review."

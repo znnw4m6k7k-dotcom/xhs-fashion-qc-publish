@@ -1,0 +1,110 @@
+{
+  "schema": "xhs-fashion-photography-deck/v1",
+  "source": "Packaged from the original local seven-dimension photography prompt page",
+  "usage": "For each image, choose one compatible card from every dimension. Clothing facts, product safety, and image-QC rules override all cards.",
+  "dimensions": {
+    "composition": {
+      "label": "构图方式",
+      "items": [
+        {"id":"rule-of-thirds","name":"三分法构图","desc":"人物眼睛位于画面1/3交叉点，视觉聚焦自然"},
+        {"id":"center","name":"中心构图","desc":"人物居中，背景对称或极简，直接突出主体"},
+        {"id":"diagonal","name":"对角线构图","desc":"人物身体或肢体沿画面对角线延展，动态感强"},
+        {"id":"frame","name":"框架构图","desc":"利用门框、窗户或树枝形成天然画框，增加层次"},
+        {"id":"leading-lines","name":"引导线构图","desc":"道路、栏杆或墙壁线条引导视线到人物"},
+        {"id":"negative-space","name":"留白构图","desc":"人物占画面四分之一以下，大面积干净背景留白"},
+        {"id":"high-angle","name":"俯拍构图","desc":"45度俯拍，适合坐姿或卧姿"},
+        {"id":"low-angle","name":"仰拍构图","desc":"低角度仰拍，配合天空背景"},
+        {"id":"close-up","name":"特写构图","desc":"眼、唇或手的局部充满画面，强调情绪和细节"},
+        {"id":"dutch-angle","name":"倾斜构图","desc":"画面微倾5至15度，增加动感和时尚感"}
+      ]
+    },
+    "pose": {
+      "label": "模特姿势",
+      "items": [
+        {"id":"look-back","name":"侧身回眸","desc":"背对镜头走几步后回头，抓拍发丝飘动的瞬间"},
+        {"id":"hair-touch","name":"撩发动感","desc":"手部自然拨弄头发，连拍选最松弛的一帧"},
+        {"id":"soft-smile","name":"低头浅笑","desc":"微低头15度，嘴角轻扬，视线落于下方"},
+        {"id":"walking","name":"行走抓拍","desc":"自然走动中连拍，裙摆或发丝随风飘动"},
+        {"id":"lean-wall","name":"靠墙侧立","desc":"背靠或侧靠墙壁，前腿微曲，重心偏移"},
+        {"id":"sit-forward","name":"坐姿前倾","desc":"坐椅子前三分之一，身体微前倾，手自然搭膝"},
+        {"id":"prop-interact","name":"道具互动","desc":"手持花束、咖啡、相机或书本，与道具自然互动"},
+        {"id":"eyes-closed","name":"仰面闭眼","desc":"面向光源闭眼，放松沉静的氛围感"},
+        {"id":"side-profile","name":"半身侧影","desc":"侧身45度，只拍上半身，强调轮廓线条"},
+        {"id":"squat-hug","name":"蹲姿抱膝","desc":"蹲下双手抱膝，慵懒随意的文艺感"},
+        {"id":"back-view","name":"背影眺望","desc":"纯背影拍摄，人物面朝远方、大海或城市"},
+        {"id":"jump-capture","name":"跳跃瞬间","desc":"跳起的动态抓拍，配合连拍选最佳帧"}
+      ]
+    },
+    "lighting": {
+      "label": "光线类型与方向",
+      "items": [
+        {"id":"golden-backlight","name":"黄金逆光","desc":"日落前1小时逆光拍摄，发丝有金边光感"},
+        {"id":"45-side-light","name":"45度侧光","desc":"光线从侧面45度打来，面部立体有层次"},
+        {"id":"window-soft","name":"窗边柔光","desc":"室内靠窗，自然光从侧方漫射"},
+        {"id":"overcast","name":"阴天漫射","desc":"柔和均匀无强阴影，皮肤质感自然"},
+        {"id":"sunrise-warm","name":"日出暖光","desc":"清晨低角度暖色光，温暖柔和氛围"},
+        {"id":"dappled-light","name":"树荫斑驳光","desc":"树叶缝隙透过的光斑落在身上"},
+        {"id":"neon-light","name":"霓虹灯光","desc":"夜间城市霓虹灯或招牌光，都市氛围"},
+        {"id":"candle-warm","name":"暖灯或烛光","desc":"室内暖色点光源，温馨亲密氛围"},
+        {"id":"rim-light","name":"轮廓光","desc":"后方光源勾勒人物轮廓，正面补光"},
+        {"id":"silhouette","name":"剪影逆光","desc":"强逆光下人物全黑剪影，强调形状和氛围"},
+        {"id":"rembrandt","name":"伦勃朗光","desc":"45度侧上方来光，脸颊出现三角光区"},
+        {"id":"butterfly","name":"蝴蝶光","desc":"正面高位光，鼻下出现蝴蝶形阴影"}
+      ]
+    },
+    "depthOfField": {
+      "label": "景深效果",
+      "items": [
+        {"id":"shallow-dof","name":"超大光圈虚化","desc":"f/1.4至1.8，背景奶油般融化，主体突出"},
+        {"id":"medium-dof","name":"中等景深","desc":"f/2.8至4，人物锐利背景微虚，兼顾环境和主体"},
+        {"id":"deep-dof","name":"全景深","desc":"f/8至11，环境人像前后都清晰，适合旅行大片"},
+        {"id":"foreground-blur","name":"前景虚化","desc":"利用前景花草、玻璃或纱帘虚化制造层次"},
+        {"id":"bokeh-bg","name":"光斑背景","desc":"背景灯光或水面反光形成圆形梦幻光斑"},
+        {"id":"tilt-shift","name":"移轴效果","desc":"局部清晰其余逐渐虚化，微缩模型感"}
+      ]
+    },
+    "expression": {
+      "label": "表情情绪",
+      "items": [
+        {"id":"gentle-smile","name":"温柔浅笑","desc":"嘴角微扬，眼神柔和温暖，不露齿"},
+        {"id":"cool-gaze","name":"冷艳凝视","desc":"直视镜头，面无表情或微抿嘴，高级时尚感"},
+        {"id":"relaxed","name":"慵懒放松","desc":"完全松弛，不经意的自然状态，像被抓拍"},
+        {"id":"melancholy","name":"忧郁沉思","desc":"望向远方出神，略带故事感"},
+        {"id":"big-laugh","name":"开怀大笑","desc":"自然抓拍的灿烂笑容，感染力强"},
+        {"id":"playful-wink","name":"俏皮灵动","desc":"眨眼、吐舌或歪头，可爱俏皮的瞬间"},
+        {"id":"focused","name":"专注沉浸","desc":"专注做某事不看镜头，如看书、写字或喝咖啡"},
+        {"id":"mysterious","name":"神秘侧颜","desc":"侧面拍摄不露全脸，低调神秘的高级感"}
+      ]
+    },
+    "background": {
+      "label": "背景风格",
+      "items": [
+        {"id":"solid-wall","name":"纯色墙面","desc":"白、奶油、浅灰或莫兰迪色干净背景"},
+        {"id":"greenery","name":"自然绿植","desc":"公园草坪、森林、爬藤墙或热带植物"},
+        {"id":"urban-street","name":"城市街景","desc":"老城区巷弄、斑马线、红绿灯或路牌"},
+        {"id":"seaside","name":"海边沙滩","desc":"海滩、礁石、海岸公路或码头"},
+        {"id":"cafe-interior","name":"咖啡馆内","desc":"复古咖啡店、窗边座位或木质桌椅"},
+        {"id":"flower-field","name":"花海或花墙","desc":"花田、花丛、花艺装置或樱花树下"},
+        {"id":"industrial","name":"工业风","desc":"旧厂房、水泥墙、铁艺楼梯或仓库"},
+        {"id":"minimal-white","name":"极简白空间","desc":"美术馆、白色画廊或极简建筑"},
+        {"id":"sunset-sky","name":"日落天空","desc":"以天空和夕阳为背景，剪影或半剪影"},
+        {"id":"vintage-building","name":"复古建筑","desc":"老洋房、红砖墙、拱门或欧式建筑"}
+      ]
+    },
+    "scene": {
+      "label": "场景类别",
+      "items": [
+        {"id":"street-snap","name":"街拍日常","desc":"逛街、等车、过马路或路边随拍"},
+        {"id":"home-vibe","name":"居家氛围","desc":"沙发、床、厨房或阳台的居家生活感"},
+        {"id":"cafe-reading","name":"咖啡馆加阅读","desc":"咖啡、书、窗边的文艺午后"},
+        {"id":"travel-vacation","name":"旅行度假","desc":"海边、山间、古城或酒店的旅行度假感"},
+        {"id":"floral-picnic","name":"花艺田园野餐","desc":"花田、花园或草地野餐的田园诗意"},
+        {"id":"city-night","name":"城市夜景","desc":"霓虹灯、车流、天台或夜市的城市夜晚"},
+        {"id":"gallery-museum","name":"美术馆或展览","desc":"看展、画廊或艺术空间的文艺氛围"},
+        {"id":"sports-outdoor","name":"运动户外","desc":"骑行、徒步、跑步或滑板的活力瞬间"},
+        {"id":"campus-youth","name":"校园青春","desc":"操场、教室、图书馆或走廊的青春感"},
+        {"id":"rooftop-terrace","name":"天台或露台","desc":"高处眺望城市的开阔感"}
+      ]
+    }
+  }
+}
