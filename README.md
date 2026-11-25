@@ -4,6 +4,8 @@
 
 本仓库只提供编排 Skill，不包含账号、Cookie、API Key、测试图片、数据库或任何企业私有资料。独立审图与事实型文案 Agent 请从配套仓库安装。
 
+请先安装并验证 [xhs-fashion-agents](https://github.com/znnw4m6k7k-dotcom/xhs-fashion-agents) 的两个自定义 Agent，再安装本编排技能。涉及发布时，还需检查 RedBeacon 配置并取得人工确认。
+
 ## 在 Codex 聊天窗口安装
 
 把下面一整句话发送给 Codex：
